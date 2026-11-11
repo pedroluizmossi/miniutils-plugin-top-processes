@@ -25,6 +25,12 @@ miniutils --instalar io.github.pedroluizmossi.top-processes <índice> --chave <c
 
 Remover: `miniutils --remover io.github.pedroluizmossi.top-processes`.
 
+## Versões
+
+- **0.2.0**: título na fonte de título e percentuais na fonte mono do visual da janela
+  (`theme.font-title`, `theme.font-mono`).
+- **0.1.0**: primeira versão.
+
 ## Licença
 
 MIT

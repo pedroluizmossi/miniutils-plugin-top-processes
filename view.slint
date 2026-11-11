@@ -46,7 +46,7 @@ export component Main inherits Rectangle {
             VerticalLayout {
                 alignment: center;
                 horizontal-stretch: 1;
-                Text { text: "Top processos"; color: theme.text; font-size: 17px; font-weight: 700; }
+                Text { text: "Top processos"; color: theme.text; font-family: theme.font-title; font-size: 17px; font-weight: 700; }
                 Text { text: subtitle; color: theme.sub; font-size: 12px; overflow: elide; }
             }
             VerticalLayout {
@@ -61,8 +61,8 @@ export component Main inherits Rectangle {
         for p in rows: HorizontalLayout {
             spacing: 10px;
             Text { text: p.name; color: p.hot ? theme.warn : theme.text; font-size: 13px; horizontal-stretch: 1; overflow: elide; }
-            Text { text: p.cpu; color: sort == "cpu" ? theme.text : theme.sub; font-size: 13px; width: 64px; horizontal-alignment: right; }
-            Text { text: p.mem; color: sort == "mem" ? theme.text : theme.sub; font-size: 13px; width: 64px; horizontal-alignment: right; }
+            Text { text: p.cpu; color: sort == "cpu" ? theme.text : theme.sub; font-family: theme.font-mono; font-size: 13px; width: 64px; horizontal-alignment: right; }
+            Text { text: p.mem; color: sort == "mem" ? theme.text : theme.sub; font-family: theme.font-mono; font-size: 13px; width: 64px; horizontal-alignment: right; }
         }
         Rectangle { vertical-stretch: 1; }
     }
